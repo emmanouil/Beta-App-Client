@@ -4,15 +4,17 @@ Originally developed for the "_Extended Video Streams for Spatiotemporal Navigat
 
 This version of the client supports navigating through space and time in a selection of videos. The sister project of Spatiotemporal Navigation is [SWAPUGC](https://github.com/emmanouil/SWAPUGC), which permits watching an event via different UGC video streams (with spatiotemporal information). A demo of SWAPUGC is available [here](https://emmanouil.github.io/SWAPUGC/)
 
+Compatible datasets can be recorded with the [Spatiotemporal Navigation Recorder](https://github.com/emmanouil/Spatiotemporal-Navigation-Recorder) Android application. They can be formated using the parser, located in the `parsing` dir.
+
 ### Input:
-A `playlist.txt` located in a top-level subfolder named `parsing` with names of files.
+A `playlist.txt` containing the name of files, located in a top-level subfolder named `parsing`.
 
 For each _NAMEOFFILE_ there should exist (in the same folder as `playlist.txt`) a:
 
 1. `VID_NAMEOFFILE.mp4` video file
 2. `OUT_NAMEOFFILE.txt` data file (output of the parser), that contains an array of JSON Object [like this](#location-and-sensor-pairs)
 
-=====
+----
 
 ### Data In Use
 #### Global Pairs Holder

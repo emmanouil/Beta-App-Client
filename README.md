@@ -1,6 +1,10 @@
-# Beta-App-Client
+# Spatiotemporal Navigation (client)
 
-###Input:
+Originally developed for the "_Extended Video Streams for Spatiotemporal Navigation_" demo presented at The Graphical Web 2016 and extended for the "_Streaming And Presentation Architectures For Extended Video Streams_" [short paper](https://www.researchgate.net/publication/317593679_Streaming_and_Presentation_Architectures_for_Extended_Video_Streams), presented at ACM TVX '17.
+
+This version of the client supports navigating through space and time in a selection of videos. The sister project of Spatiotemporal Navigation is [SWAPUGC](https://github.com/emmanouil/SWAPUGC), which permits watching an event via different UGC video streams (with spatiotemporal information). A demo of SWAPUGC is available [here](https://emmanouil.github.io/SWAPUGC/)
+
+### Input:
 A `playlist.txt` located in a top-level subfolder named `parsing` with names of files.
 
 For each _NAMEOFFILE_ there should exist (in the same folder as `playlist.txt`) a:
@@ -10,8 +14,8 @@ For each _NAMEOFFILE_ there should exist (in the same folder as `playlist.txt`) 
 
 =====
 
-###Data In Use
-####Global Pairs Holder
+### Data In Use
+#### Global Pairs Holder
 global variable name: ```globalSetIndex```
 decription: an Array of recordings - the Location/Sensor Pair Objects of each recording are stored in the ```set``` field)
 ```JSON
@@ -26,7 +30,7 @@ decription: an Array of recordings - the Location/Sensor Pair Objects of each re
 ```
 
 
-####Location and Sensor Pairs
+#### Location and Sensor Pairs
 decription: An Object holding Orientation and Location information for a POI
 ```JSON
     {
